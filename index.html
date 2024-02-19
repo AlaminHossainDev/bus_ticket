@@ -11,11 +11,180 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- custum css -->
+    <!-- custom css -->
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <h1 class="font-raleway font-bold bg-accent">bus ticket</h1>
-    <h1 class="font-inter font-bold bg-green-500">bus ticket</h1>
+    <!-- start site header -->
+    <header class="md:container lg:mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <a class="btn btn-ghost font-raleway text-3xl font-extrabold"
+            >GoBus<span class="text-[#1DD100]">Ticket</span></a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-base font-raleway">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a
+            class="btn font-raleway bg-[#e8fae5] border-2 border-[#1DD100] text-lg font-bold text-[#1DD100]"
+            >Bus<img src="./images/bus-icon.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- End site header -->
+    <main class="md:container lg:mx-auto">
+      <!-- Banner section start -->
+      <section class="bg-gradient h-[550px] w-full rounded-3xl">
+        <div class="flex flex-col justify-center items-center h-screen pb-20">
+          <h1 class="font-raleway font-extrabold text-6xl text-white">
+            End-to-End Travel with
+          </h1>
+          <h1 class="font-raleway font-extrabold text-6xl text-[#1DD100] mt-5">
+            GoBus Paribahan
+          </h1>
+          <p class="text-gray-200 mt-5">
+            Yes, you can run unit tests and view the results directly within the
+            app. <br />The integrated testing features allow for a streamlined .
+          </p>
+          <button
+            class="btn btn-active bg-[#1DD100] font-raleway text-white border-2 border-[#1DD100] text-lg font-bold mt-5"
+          >
+            Buy Tickets
+          </button>
+        </div>
+      </section>
+      <!-- Banner section End -->
+      <!-- banner info section start -->
+      <section class="pb-20 flex justify-center gap-7 mt-[-70px]">
+        <!-- card no: 1 -->
+        <div
+          class="w-96 bg-base-100 shadow-xl rounded-3xl border-b-4 border-b-[#1DD100] p-12"
+        >
+          <div class="flex gap-5 justify-center">
+            <div>
+              <img src="./images/people.png" alt="" />
+            </div>
+            <div>
+              <h2 class="font-inter text-3xl font-extrabold">550K+</h2>
+              <p>Registered users</p>
+            </div>
+          </div>
+        </div>
+        <!-- card no: 2 -->
+        <div
+          class="w-96 bg-base-100 shadow-xl rounded-3xl border-b-4 border-b-[#1DD100] p-12"
+        >
+          <div class="flex gap-5 justify-center">
+            <div>
+              <img src="./images/ticket-cupon.png" alt="" />
+            </div>
+            <div>
+              <h2 class="font-inter text-3xl font-extrabold">1.7 lacks</h2>
+              <p>Tickets sold</p>
+            </div>
+          </div>
+        </div>
+        <!-- card no: 3 -->
+        <div
+          class="w-96 bg-base-100 shadow-xl rounded-3xl border-b-4 border-b-[#1DD100] p-12"
+        >
+          <div class="flex gap-5 justify-center">
+            <div>
+              <img src="./images/stoppage.png" alt="" />
+            </div>
+            <div>
+              <h2 class="font-inter text-3xl font-extrabold">80K+</h2>
+              <p>Rental partners</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner info section End -->
+
+      <!-- coupon section start-->
+      <section>
+        <div class="text-center pb-10">
+          <h2 class="font-inter text-3xl font-extrabold text-center">
+            Best offers for you
+          </h2>
+        </div>
+        <div class="flex gap-10 items-center">
+          <!-- coupon one -->
+          <div
+            class="bg-[#FFBF0F] flex justify-center w-full rounded-3xl items-center"
+          >
+            <div class="justify-center">
+              <h2 class="font-inter text-3xl font-extrabold">15% OFF</h2>
+              <b>on your next purchase</b>
+              <p>use by January 2024</p>
+            </div>
+            <div>
+              <img src="./images/cupon-devider.png" alt="" />
+            </div>
+            <div>
+              <h2 class="font-inter text-3xl font-extrabold">80K+</h2>
+              <p>Rental partners</p>
+            </div>
+          </div>
+          <!-- coupon 2 -->
+          <div
+            class="bg-[#FFBF0F] flex justify-center w-full rounded-3xl items-center"
+          >
+            <div>
+              <h2 class="font-inter text-3xl font-extrabold">15% OFF</h2>
+              <b>on your next purchase</b>
+              <p>use by January 2024</p>
+            </div>
+            <div>
+              <img src="./images/cupon-devider.png" alt="" />
+            </div>
+            <div>
+              <h2 class="font-inter text-3xl font-extrabold">80K+</h2>
+              <p>Rental partners</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-10">
+          <button
+            class="btn border-2 border-[#1DD100] bg-[#ffffff] text-[#1DD100] mb-10 font-raleway text-lg font-semibold mb-10t"
+          >
+            See All Offers
+          </button>
+        </div>
+      </section>
+      <!-- coupon section End-->
+
+      <!-- ticket buy section start -->
+      <section class="rounded-t-3xl border-t-2 border-t-[#1DD100]">
+        <div class="text-center py-10">
+          <h1 class="font-inter text-3xl font-extrabold">GoBus Poribahan</h1>
+          <p class="text-gray-500 mt-5">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated <br />
+            testing features allow for a streamlined .
+          </p>
+        </div>
+        <!-- info section for  ticket start-->
+        <div>
+          <div>
+            <img src="./images/bus-logo.png" alt="" />
+          </div>
+          <div></div>
+        </div>
+        <!-- info section for  ticket start-->
+        <div></div>
+        <div></div>
+      </section>
+      <!-- ticket buy section End -->
+    </main>
+    <footer></footer>
   </body>
 </html>
