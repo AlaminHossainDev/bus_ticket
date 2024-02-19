@@ -163,7 +163,7 @@
       <!-- coupon section End-->
 
       <!-- ticket buy section start -->
-      <section class="rounded-t-3xl border-t-2 border-t-[#1DD100]">
+      <section class="rounded-t-3xl border-t-2 border-t-[#1DD100] bg-[#f7f8f8]">
         <div class="text-center py-10">
           <h1 class="font-inter text-3xl font-extrabold">GoBus Poribahan</h1>
           <p class="text-gray-500 mt-5">
@@ -173,13 +173,72 @@
           </p>
         </div>
         <!-- info section for  ticket start-->
-        <div>
-          <div>
-            <img src="./images/bus-logo.png" alt="" />
+        <div
+          class="flex justify-around items-center bg-white m-10 px-5 rounded-lg"
+        >
+          <!-- left side info -->
+          <div class="flex flex-1 justify-between flex-col">
+            <div class="flex justify-between">
+              <div class="flex gap-3">
+                <div><img src="./images/bus-logo.png" alt="" /></div>
+                <div>
+                  <h2 class="font-inter text-lg font-bold">GoBus Poribahan</h2>
+                  <p>Coach-009-WEB ! AC_Business</p>
+                </div>
+              </div>
+              <div>
+                <button
+                  class="btn font-raleway bg-[#e8fae5] border-2 border-[#1DD100] text-lg font-bold text-[#1DD100]"
+                >
+                  <img src="./images/seat-green.png" alt="" />
+                  40 Seats left
+                </button>
+              </div>
+            </div>
+            <!-- table Start-->
+            <div class="grid-cols-1 bg-[#F7F8F8] rounded-lg mt-5">
+              <div class="overflow-x-auto">
+                <table class="table">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th>Route</th>
+                      <th>Dhaka - Sylhet</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- row 1 -->
+                    <tr>
+                      <td>Departure Time</td>
+                      <td>9:00 PM</td>
+                    </tr>
+                    <!-- row 2 -->
+                    <tr>
+                      <td>
+                        <button class="btn btn-wide mr-3">
+                          Boarding Point - Laxmipur</button
+                        ><button class="btn btn-wide mr-3">
+                          Dropping Point - Bogura</button
+                        ><button class="btn btn-wide">
+                          Boarding Point - Laxmipur
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- table End-->
           </div>
-          <div></div>
+          <div><img src="./images/info-devider.png" alt="" /></div>
+          <!-- right side info -->
+          <div class="w-96 flex flex-col items-center gap-2">
+            <img src="./images/fare.png" alt="" />
+            <h2 class="font-inter text-3xl font-extrabold">550 Taka</h2>
+            <p class="text-gray-500">Per Seat</p>
+          </div>
         </div>
-        <!-- info section for  ticket start-->
+        <!-- info section for  ticket end-->
         <div></div>
         <div></div>
       </section>
