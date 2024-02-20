@@ -40,7 +40,7 @@
       </div>
     </header>
     <!-- End site header -->
-    <main class="">
+    <main>
       <!-- Banner section start -->
       <section
         class="bg-gradient h-[550px] w-full rounded-3xl md:container lg:mx-auto"
@@ -195,10 +195,10 @@
                 </div>
                 <div>
                   <button
-                    class="btn font-raleway bg-[#e8fae5] border-2 border-[#1DD100] text-lg font-bold text-[#1DD100]"
+                    class="btn font-inter bg-[#e8fae5] border-2 border-[#1DD100] text-lg font-bold text-[#1DD100]"
                   >
                     <img src="./images/seat-green.png" alt="" />
-                    40 Seats left
+                    <span id="seat-left">40</span> Seats left
                   </button>
                 </div>
               </div>
@@ -290,57 +290,57 @@
             <div class="flex justify-between px-2">
               <div class="flex gap-12 py-5">
                 <p class="py-6 rounded-lg font-inter">A</p>
-                <p
-                  class="shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
+                <button
+                  class="btn-select shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
                 >
                   A1
-                </p>
-                <p
-                  class="shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
+                </button>
+                <button
+                  class="btn-select shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
                 >
                   A2
-                </p>
+                </button>
               </div>
               <div class="flex gap-12 py-5">
-                <p
-                  class="shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
+                <button
+                  class="btn-select shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
                 >
                   A3
-                </p>
-                <p
-                  class="shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
+                </button>
+                <button
+                  class="btn-select shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
                 >
                   A4
-                </p>
+                </button>
               </div>
             </div>
             <!-- A series End-->
             <!-- B series Start-->
             <div class="flex justify-between px-2">
               <div class="flex gap-12 py-5">
-                <p class="py-6 rounded-lg font-inter">B</p>
-                <p
-                  class="shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
+                <button class="py-6 rounded-lg font-inter">B</button>
+                <button
+                  class="btn-select shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
                 >
                   B1
-                </p>
-                <p
-                  class="shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
+                </button>
+                <button
+                  class="btn-select shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
                 >
                   B2
-                </p>
+                </button>
               </div>
               <div class="flex gap-12 py-5">
-                <p
-                  class="shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
+                <button
+                  class="btn-select shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
                 >
                   B3
-                </p>
-                <p
-                  class="shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
+                </button>
+                <button
+                  class="btn-select shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
                 >
                   B4
-                </p>
+                </button>
               </div>
             </div>
             <!-- B series End-->
@@ -361,14 +361,15 @@
                   <!-- head -->
                   <thead>
                     <tr>
-                      <th>
+                      <th class="text-base text-black">
                         Seat<span
-                          class="text-white bg-[#1DD100] ml-1 rounded-sm px-2"
-                          >2</span
+                          id="seat-count"
+                          class="text-white text-base bg-[#1DD100] ml-1 rounded-lg px-4"
+                          >0</span
                         >
                       </th>
-                      <th>Class</th>
-                      <th>Price</th>
+                      <th class="text-base text-black">Class</th>
+                      <th class="text-base text-black">Price</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -480,5 +481,6 @@
         </div>
       </footer>
     </section>
+    <script src="./app.js"></script>
   </body>
 </html>
