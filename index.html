@@ -40,9 +40,11 @@
       </div>
     </header>
     <!-- End site header -->
-    <main class="md:container lg:mx-auto">
+    <main class="">
       <!-- Banner section start -->
-      <section class="bg-gradient h-[550px] w-full rounded-3xl">
+      <section
+        class="bg-gradient h-[550px] w-full rounded-3xl md:container lg:mx-auto"
+      >
         <div class="flex flex-col justify-center items-center h-screen pb-20">
           <h1 class="font-raleway font-extrabold text-6xl text-white">
             End-to-End Travel with
@@ -63,7 +65,9 @@
       </section>
       <!-- Banner section End -->
       <!-- banner info section start -->
-      <section class="pb-20 flex justify-center gap-7 mt-[-70px]">
+      <section
+        class="pb-20 flex justify-center gap-7 mt-[-70px] md:container lg:mx-auto"
+      >
         <!-- card no: 1 -->
         <div
           class="w-96 bg-base-100 shadow-xl rounded-3xl border-b-4 border-b-[#1DD100] p-12"
@@ -110,7 +114,7 @@
       <!-- banner info section End -->
 
       <!-- coupon section start-->
-      <section>
+      <section class="md:container lg:mx-auto">
         <div class="text-center pb-10">
           <h2 class="font-inter text-3xl font-extrabold text-center">
             Best offers for you
@@ -130,8 +134,8 @@
               <img src="./images/cupon-devider.png" alt="" />
             </div>
             <div>
-              <h2 class="font-inter text-3xl font-extrabold">80K+</h2>
-              <p>Rental partners</p>
+              <h2 class="font-inter text-3xl font-extrabold">NEW15</h2>
+              <p>Coupon Code</p>
             </div>
           </div>
           <!-- coupon 2 -->
@@ -139,7 +143,7 @@
             class="bg-[#FFBF0F] flex justify-center w-full rounded-3xl items-center"
           >
             <div>
-              <h2 class="font-inter text-3xl font-extrabold">15% OFF</h2>
+              <h2 class="font-inter text-3xl font-extrabold">20% OFF</h2>
               <b>on your next purchase</b>
               <p>use by January 2024</p>
             </div>
@@ -147,8 +151,8 @@
               <img src="./images/cupon-devider.png" alt="" />
             </div>
             <div>
-              <h2 class="font-inter text-3xl font-extrabold">80K+</h2>
-              <p>Rental partners</p>
+              <h2 class="font-inter text-3xl font-extrabold">Couple 20</h2>
+              <p>Coupon Code</p>
             </div>
           </div>
         </div>
@@ -164,85 +168,291 @@
 
       <!-- ticket buy section start -->
       <section class="rounded-t-3xl border-t-2 border-t-[#1DD100] bg-[#f7f8f8]">
-        <div class="text-center py-10">
-          <h1 class="font-inter text-3xl font-extrabold">GoBus Poribahan</h1>
-          <p class="text-gray-500 mt-5">
-            Yes, you can run unit tests and view the results directly within the
-            app. The integrated <br />
-            testing features allow for a streamlined .
-          </p>
-        </div>
-        <!-- info section for  ticket start-->
-        <div
-          class="flex justify-around items-center bg-white m-10 px-5 rounded-lg"
-        >
-          <!-- left side info -->
-          <div class="flex flex-1 justify-between flex-col">
-            <div class="flex justify-between">
-              <div class="flex gap-3">
-                <div><img src="./images/bus-logo.png" alt="" /></div>
-                <div>
-                  <h2 class="font-inter text-lg font-bold">GoBus Poribahan</h2>
-                  <p>Coach-009-WEB ! AC_Business</p>
+        <div class="md:container lg:mx-auto">
+          <div class="text-center py-10">
+            <h1 class="font-inter text-3xl font-extrabold">GoBus Poribahan</h1>
+            <p class="text-gray-500 mt-5">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated <br />
+              testing features allow for a streamlined .
+            </p>
+          </div>
+          <!-- info section for  ticket start-->
+          <div
+            class="flex justify-around items-center bg-white px-5 rounded-lg shadow-lg"
+          >
+            <!-- left side info -->
+            <div class="flex flex-1 justify-between flex-col">
+              <div class="flex justify-between">
+                <div class="flex gap-3">
+                  <div><img src="./images/bus-logo.png" alt="" /></div>
+                  <div>
+                    <h2 class="font-inter text-lg font-bold">
+                      GoBus Poribahan
+                    </h2>
+                    <p>Coach-009-WEB ! AC_Business</p>
+                  </div>
                 </div>
+                <div>
+                  <button
+                    class="btn font-raleway bg-[#e8fae5] border-2 border-[#1DD100] text-lg font-bold text-[#1DD100]"
+                  >
+                    <img src="./images/seat-green.png" alt="" />
+                    40 Seats left
+                  </button>
+                </div>
+              </div>
+              <!-- table Start-->
+              <div class="grid-cols-1 bg-[#F7F8F8] rounded-lg mt-5">
+                <div class="overflow-x-auto">
+                  <table class="table">
+                    <!-- head -->
+                    <thead>
+                      <tr>
+                        <th>Route</th>
+                        <th>Dhaka - Sylhet</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- row 1 -->
+                      <tr>
+                        <td>Departure Time</td>
+                        <td>9:00 PM</td>
+                      </tr>
+                      <!-- row 2 -->
+                      <tr>
+                        <td>
+                          <button class="btn btn-wide mr-3">
+                            Boarding Point - Laxmipur</button
+                          ><button class="btn btn-wide mr-3">
+                            Dropping Point - Bogura</button
+                          ><button class="btn btn-wide">
+                            Boarding Point - Laxmipur
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- table End-->
+            </div>
+            <div><img src="./images/info-devider.png" alt="" /></div>
+            <!-- right side info -->
+            <div class="w-96 flex flex-col items-center gap-2">
+              <img src="./images/fare.png" alt="" />
+              <h2 class="font-inter text-3xl font-extrabold">550 Taka</h2>
+              <p class="text-gray-500">Per Seat</p>
+            </div>
+          </div>
+        </div>
+        <!-- info section for  ticket end-->
+      </section>
+      <!-- ticket buy section End -->
+
+      <!-- Select Your Seat for booking start-->
+      <section class="bg-[#f7f8f8] pt-20">
+        <!-- parents 1-->
+        <div
+          class="flex justify-between md:container lg:mx-auto bg-white shadow-lg p-8 rounded-lg"
+        >
+          <!-- left -->
+          <div class="flex-1 border-r-2 border-dashed border-[#03071249]">
+            <h1 class="font-inter text-2xl font-bold pb-4">Select Your Seat</h1>
+            <!--seat info-->
+            <div
+              class="flex justify-between pr-10 border-y-2 border-dotted border-[#a1a0a044]"
+            >
+              <div class="flex items-center py-2">
+                <img src="./images/seat-gray.png" class="w-10" alt="" />
+                <h2 class="font-inter text-2xl font-normal text-gray-400">
+                  Available
+                </h2>
               </div>
               <div>
                 <button
-                  class="btn font-raleway bg-[#e8fae5] border-2 border-[#1DD100] text-lg font-bold text-[#1DD100]"
+                  class="btn font-inter bg-[#e8fae500] text-lg font-bold text-[#1DD100]"
                 >
-                  <img src="./images/seat-green.png" alt="" />
-                  40 Seats left
+                  <img src="./images/seat-green-filled.png" alt="" />
+                  Seats Selected
                 </button>
               </div>
             </div>
-            <!-- table Start-->
-            <div class="grid-cols-1 bg-[#F7F8F8] rounded-lg mt-5">
+            <!-- seat booking button Start-->
+            <div class="flex flex-row-reverse justify-items-end p-2">
+              <p
+                class="shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
+              >
+                <img src="./images/driver.svg" alt="" />
+              </p>
+            </div>
+            <!-- A series Start-->
+            <div class="flex justify-between px-2">
+              <div class="flex gap-12 py-5">
+                <p class="py-6 rounded-lg font-inter">A</p>
+                <p
+                  class="shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
+                >
+                  A1
+                </p>
+                <p
+                  class="shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
+                >
+                  A2
+                </p>
+              </div>
+              <div class="flex gap-12 py-5">
+                <p
+                  class="shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
+                >
+                  A3
+                </p>
+                <p
+                  class="shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
+                >
+                  A4
+                </p>
+              </div>
+            </div>
+            <!-- A series End-->
+            <!-- B series Start-->
+            <div class="flex justify-between px-2">
+              <div class="flex gap-12 py-5">
+                <p class="py-6 rounded-lg font-inter">B</p>
+                <p
+                  class="shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
+                >
+                  B1
+                </p>
+                <p
+                  class="shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
+                >
+                  B2
+                </p>
+              </div>
+              <div class="flex gap-12 py-5">
+                <p
+                  class="shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
+                >
+                  B3
+                </p>
+                <p
+                  class="shadow-sm bg-[#F7F8F8] px-16 py-6 rounded-lg font-inter"
+                >
+                  B4
+                </p>
+              </div>
+            </div>
+            <!-- B series End-->
+
+            <!-- seat booking button End-->
+          </div>
+          <!-- right -->
+          <div class="w-2/5 pl-7">
+            <h1
+              class="font-inter text-2xl font-bold pb-4 border-b-2 border-dotted border-[#a1a0a044]"
+            >
+              Select Your Seat
+            </h1>
+            <!-- Money calculation section start -->
+            <div class="bg-[#F7F8F8] rounded-lg mt-5">
               <div class="overflow-x-auto">
                 <table class="table">
                   <!-- head -->
                   <thead>
                     <tr>
-                      <th>Route</th>
-                      <th>Dhaka - Sylhet</th>
+                      <th>
+                        Seat<span
+                          class="text-white bg-[#1DD100] ml-1 rounded-sm px-2"
+                          >2</span
+                        >
+                      </th>
+                      <th>Class</th>
+                      <th>Price</th>
                     </tr>
                   </thead>
                   <tbody>
                     <!-- row 1 -->
                     <tr>
-                      <td>Departure Time</td>
-                      <td>9:00 PM</td>
+                      <td>C2</td>
+                      <td>Economy</td>
+                      <td>550</td>
                     </tr>
                     <!-- row 2 -->
-                    <tr>
-                      <td>
-                        <button class="btn btn-wide mr-3">
-                          Boarding Point - Laxmipur</button
-                        ><button class="btn btn-wide mr-3">
-                          Dropping Point - Bogura</button
-                        ><button class="btn btn-wide">
-                          Boarding Point - Laxmipur
-                        </button>
-                      </td>
+                    <tr class="">
+                      <td>C2</td>
+                      <td>Economy</td>
+                      <td>550</td>
+                    </tr>
+                    <!-- row 3 -->
+                    <tr class="border-t-2 border-b-zinc-100">
+                      <td>Total Price</td>
+                      <td></td>
+                      <td>BDT 1100</td>
                     </tr>
                   </tbody>
                 </table>
+                <!-- apply coupon Start-->
+                <div class="py-5 pl-2 pr-24 flex justify-start">
+                  <input
+                    type="text"
+                    placeholder="Have any copupon?"
+                    class="input input-bordered w-full"
+                  /><button class="btn text-white bg-[#1DD100]">
+                    Appy Now
+                  </button>
+                </div>
+                <!-- apply coupon End-->
+
+                <!-- total calculation start-->
+                <div class="flex py-2 pl-5 pr-24 justify-between">
+                  <h2>Grand Total</h2>
+                  <h2>BDT 1100</h2>
+                </div>
+                <!-- total calculation End-->
               </div>
             </div>
-            <!-- table End-->
-          </div>
-          <div><img src="./images/info-devider.png" alt="" /></div>
-          <!-- right side info -->
-          <div class="w-96 flex flex-col items-center gap-2">
-            <img src="./images/fare.png" alt="" />
-            <h2 class="font-inter text-3xl font-extrabold">550 Taka</h2>
-            <p class="text-gray-500">Per Seat</p>
+            <!-- Money calculation section End -->
+
+            <!-- input passenger info start -->
+            <div>
+              <div class="p-2 mt-5 flex justify-start flex-col gap-2">
+                <div>
+                  <label for="">Passenger Name*</label>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  class="input input-bordered w-full bg-white"
+                />
+                <div>
+                  <label for="">Phone Number*</label>
+                </div>
+                <input
+                  type="number"
+                  placeholder="Phone Number*"
+                  class="input input-bordered w-full bg-white"
+                />
+                <div>
+                  <label for="">Email ID</label>
+                </div>
+                <input
+                  type="email"
+                  placeholder="Enter your email id"
+                  class="input input-bordered w-full bg-white"
+                />
+                <button class="btn bg-[#1DD100] text-white w-full">Next</button>
+                <div class="flex justify-center gap-4">
+                  <p class="underline">Terms and Conditions</p>
+                  <p class="underline">Cancellation Policy</p>
+                </div>
+              </div>
+            </div>
+            <!-- input passenger info End -->
           </div>
         </div>
-        <!-- info section for  ticket end-->
-        <div></div>
-        <div></div>
       </section>
-      <!-- ticket buy section End -->
+      <!-- Select Your Seat for booking start-->
     </main>
     <footer></footer>
   </body>
