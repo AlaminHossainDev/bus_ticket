@@ -3,6 +3,7 @@ const allBtn = document.getElementsByClassName("btn-select");
 let count = 0;
 let count2 = 40;
 let totalTicketPrice = 0;
+let CouponApplied = false;
 
 // count seat
 for(const btn of allBtn){
@@ -45,8 +46,32 @@ for(const btn of allBtn){
     })
 }
 
+
+// coupon for function
+const couponInput = document.getElementById("input-coupon");
+
+couponInput.addEventListener("change", function(e){
+    couponCode = e.target.value;
+    if(couponCode == "NEW15"){
+        CouponApplied = true;
+        couponDiscount = 0.15
+        couponInput.disabled = true;
+    } else if(couponCode == "Couple 20" ){
+        CouponApplied = true;
+        couponDiscount = 0.20
+        couponInput.disabled = true;
+    }
+    else{
+        CouponApplied = false;
+        alert('Invalid coupon code.');
+    }
+
+    
+})
+
+
+
 // inner Text changes function
 function setInnerText(id, value){
     document.getElementById(id).innerText = value;
 };
-
