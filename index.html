@@ -621,13 +621,16 @@
                 </div>
 
                 <!-- apply coupon Start-->
-                <div class="py-5 pl-2 pr-24 flex justify-start">
+                <div id="couponDiv" class="py-5 pl-2 pr-24 flex justify-start">
                   <input
                     type="text"
                     placeholder="Have any coupon?"
-                    id="input-coupon"
+                    id="coupon-code"
                     class="input input-bordered w-full"
-                  /><button class="btn text-white bg-[#1DD100]">
+                  /><button
+                    onclick="grandTotalPrice('apply-btn')"
+                    class="btn text-white bg-[#1DD100]"
+                  >
                     Appy Now
                   </button>
                 </div>
@@ -635,11 +638,12 @@
 
                 <!-- total calculation start-->
                 <div
+                  id=""
                   class="flex justify-around mt-10 border-t-2 border-dashed border-r-gray-500 py-5"
                 >
                   <p class="text-xl font-semibold">Grand Total</p>
                   <p class="text-xl font-semibold">
-                    BDT <span id="total-ticket-price">0</span>
+                    BDT <span id="grand-total">0</span>
                   </p>
                 </div>
                 <!-- total calculation End-->
@@ -674,7 +678,46 @@
                   placeholder="Enter your email id"
                   class="input input-bordered w-full bg-white"
                 />
-                <button class="btn bg-[#1DD100] text-white w-full">Next</button>
+                <!-- modal  Start -->
+                <!-- You can open the modal using ID.showModal() method -->
+                <button
+                  class="btn bg-[#1DD100] text-white"
+                  onclick="my_modal_4.showModal()"
+                >
+                  next
+                </button>
+                <dialog id="my_modal_4" class="modal">
+                  <div class="modal-box w-11/12 max-w-5xl">
+                    <figure class="px-10 pt-10 flex justify-center">
+                      <img
+                        src="./images/success.png"
+                        alt="Shoes"
+                        class="rounded-xl"
+                      />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-green-500 font-bold text-3xl">
+                        SUCCESS
+                      </h2>
+                      <p class="font-semibold text-[#4A4A4A]">
+                        Thank you for Booking Our Bus Seats. We are working hard
+                        to find the best service and deals for you
+                      </p>
+                      <p class="font-thin text-[#4A4A4A]">
+                        Shortly you will find a confirmation in your email.
+                      </p>
+                    </div>
+                    <div class="modal-action flex justify-center">
+                      <form method="dialog">
+                        <!-- if there is a button, it will close the modal -->
+                        <button class="btn bg-green-500 h-14 w-52">
+                          Continue
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+                <!-- modal  End-->
                 <div class="flex justify-center gap-4">
                   <p class="underline">Terms and Conditions</p>
                   <p class="underline">Cancellation Policy</p>

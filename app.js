@@ -12,8 +12,8 @@ for(const btn of allBtn){
             count = count + 1;
             count2 = count2 - 1;
             totalTicketPrice = count * 550;
-            console.log(totalTicketPrice);
-            setInnerText("total-ticket-price", totalTicketPrice)
+            setInnerText("total-ticket-price", totalTicketPrice);
+            grandTotalPrice();
             setInnerText("seat-left", count2);
             setInnerText("seat-count", count);
 
@@ -46,31 +46,33 @@ for(const btn of allBtn){
     })
 }
 
+// grand total price 
+function grandTotalPrice(status){
+    const totalCoast = totalTicketPrice;
+    if(status == undefined){
+        document.getElementById("grand-total").innerText = totalCoast;
+    }else{
+        const couponCode = document.getElementById("coupon-code").value;
+        const couponDiv = document.getElementById("couponDiv");
+        if(couponCode == "NEW15"){
+            discounted = .15 * totalCoast;
+            document.getElementById("grand-total").innerText = totalCoast -discounted;
+            couponDiv.classList.add("hidden");     
+        }else if(couponCode == "Couple 20"){
+            discounted = .20 * totalCoast;
+            document.getElementById("grand-total").innerText = totalCoast -discounted;
+            couponDiv.classList.add("hidden");
+        }
+        else{
+            alert("invalid coupon address")
 
-// coupon for function
-const couponInput = document.getElementById("input-coupon");
+        }
 
-couponInput.addEventListener("change", function(e){
-    couponCode = e.target.value;
-    if(couponCode == "NEW15"){
-        CouponApplied = true;
-        couponDiscount = 0.15
-        couponInput.disabled = true;
-    } else if(couponCode == "Couple 20" ){
-        CouponApplied = true;
-        couponDiscount = 0.20
-        couponInput.disabled = true;
     }
-    else{
-        CouponApplied = false;
-        alert('Invalid coupon code.');
-    }
+   
+}
 
-    
-})
-
-
-
+// coupon code apply
 // inner Text changes function
 function setInnerText(id, value){
     document.getElementById(id).innerText = value;
